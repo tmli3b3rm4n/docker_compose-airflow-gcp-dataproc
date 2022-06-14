@@ -31,7 +31,8 @@ Now you can start all services.
 
 Should be atleast 8g
 
-~Optionally you can enable flower by adding --profile flower option e.g. docker-compose --profile flower up or by explicitly targeted on the command line e.g. docker-compose up flower.~
+
+Optionally you can enable flower by adding --profile flower option e.g. docker-compose --profile flower up or by explicitly targeted on the command line e.g. docker-compose up flower.
 
 
 ## Notes:
