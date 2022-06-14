@@ -1,8 +1,3 @@
-
-**airflow**, **dataproc**, **docker-compose**
-
-
-## About:
 This is intended to be a quickstart for local develompment to tests dags using dataproc before pusing to production.  This is not intended to be used as a production solution.  This will set up a local Apache Airflow using docker-compose and load in any dags located in the DAG directory.  "./dags".  To run follow instructions exactly.  If you mess up installation run 
 `$ docker-compose down --volumes --remove-orphans`.
 
@@ -17,9 +12,7 @@ You can also check to see if you have enough memory by running this command:
 ```
 docker run --rm "debian:bullseye-slim" bash -c 'numfmt --to iec $(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE))))'
 ```
-
 ## Quick Start
-
 Initialize the database
 `docker-compose up airflow-init`
 
@@ -33,7 +26,6 @@ start_airflow-init_1 exited with code 0
 ```
 Now you can start all services.
 `docker-compose up` or optionally `docker-compose --profile flower up`
-
 
 ## Login
 
