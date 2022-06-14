@@ -9,6 +9,9 @@ This is intended to be a quickstart for local develompment to tests dags before 
 
 #### Default memory is often not enough
 You can also check if you have enough memory by running this command:
+``docker run --rm "debian:bullseye-slim" bash -c 'numfmt --to iec $(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE))))'`
+
+Should be atleast 8g
 
 ## Quick Start
 Initialize the database
@@ -25,15 +28,7 @@ start_airflow-init_1 exited with code 0
 Now you can start all services.
 `docker-compose up` or optionally `docker-compose --profile flower up`
 
-
-## Running 
-``docker run --rm "debian:bullseye-slim" bash -c 'numfmt --to iec $(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE))))'`
-
-Should be atleast 8g
-
-
-Optionally you can enable flower by adding --profile flower option e.g. docker-compose --profile flower up or by explicitly targeted on the command line e.g. docker-compose up flower.
-
+Optionally you can enable flower by adding --profile flower option e.g. `docker-compose --profile flower up` or by explicitly targeted on the command line e.g. `docker-compose up flower`.
 
 ## Notes:
 Some directories in the container are mounted, which means that their contents are synchronized between your computer and the container.
@@ -45,7 +40,7 @@ Some directories in the container are mounted, which means that their contents a
 ./plugins - you can put your custom plugins here.
 
 ## Loggin in
-The account created has the login airflow and the password airflow.
+The account created has the **login `airflow`** and the **password `airflow`**.
 
 
 
