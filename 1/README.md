@@ -43,5 +43,8 @@ Some directories in the container are mounted, which means that their contents a
 
 ./plugins - you can put your custom plugins here.
 
+## Loggin in
+The account created has the login airflow and the password airflow.
+
 
 
