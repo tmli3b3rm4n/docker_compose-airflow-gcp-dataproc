@@ -1,4 +1,4 @@
-This is intended to be a quickstart for local develompment to tests dags using dataproc before pusing to production.  This is not intended to be used as a production solution.  This will set up a local Apache Airflow using docker-compose and load in any dags located in the DAG directory.  "./dags".  To run follow instructions exactly.  If you mess up installation run 
+This is intended to be a quickstart for local develompment to tests dags using dataproc before pusing to production. This is a focused cliff note of using dataproc with airflow.  Everything contained is taken from apache docs. This is not intended to be used as a production solution.  This will set up a local Apache Airflow using docker-compose and load in any dags located in the DAG directory.  "./dags".  To run follow instructions exactly.  If you mess up installation run 
 `$ docker-compose down --volumes --remove-orphans`.
 
 ## Prerequisites
